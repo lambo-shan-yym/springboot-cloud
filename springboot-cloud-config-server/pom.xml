@@ -4,14 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lambo</groupId>
-	<artifactId>springboot-cloud-server</artifactId>
+	<artifactId>springboot-cloud-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<modules>
+	<packaging>jar</packaging>
 
-	</modules>
-	<packaging>pom</packaging>
-
-	<name>springboot-cloud-server</name>
+	<name>springboot-cloud-config-server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -40,20 +37,15 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!--eureka server -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
